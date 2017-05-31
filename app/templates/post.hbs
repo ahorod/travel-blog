@@ -3,4 +3,5 @@
   <p class="blog-model-meta">{{model.date}}</p>
   <img src="{{model.image}}" style="width: 80%" alt="{{model.title}}"/>
   <p>{{model.content}}</p>
+  {{edit-post post=model update='update' destroyPost='destroyPost'}}
 </div>
