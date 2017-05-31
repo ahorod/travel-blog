@@ -1,0 +1,10 @@
+
+{{#each model as |post|}}
+  <div class="blog-post">
+    <h4>{{post.title}}</h4>
+    <p class="blog-post-meta">{{post.date}}</p>
+    <img src="{{post.image}}" style="width: 80%" alt="{{post.title}}"/>
+    <br>
+    {{#link-to 'post' post.id}}Read More{{/link-to}}
+  </div>
+{{/each}}
