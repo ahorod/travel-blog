@@ -1,4 +1,4 @@
-<div class="container">
+<div id="post-page" class="container">
 
   <div class="row">
 
@@ -10,14 +10,18 @@
           <p>{{model.content}}</p>
           {{edit-post post=model update='update' destroyPost='destroyPost'}}
 
+          <div class="comment-div">
+            <h3>Comments</h3>
+            {{#each model.comments as |comment|}}
+              <div class="comment-section">
+                <h6 class="lead">{{comment.name}}</h6>
+                <p>{{comment.content}}</p>
+                {{edit-comment comment=comment destroyComment='destroyComment' updateComment='updateComment'}}
+              </div>
+            {{/each}}
+          </div>
 
-          {{#each model.comments as |comment|}}
-            <div>
-              <h4>{{comment.name}}</h4>
-              <p>{{comment.content}}</p>
-              {{edit-comment comment=comment destroyComment='destroyComment' updateComment='updateComment'}}
-            </div>
-          {{/each}}
+
 
 
           {{new-comment saveComment="saveComment" post=model}}

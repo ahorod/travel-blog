@@ -5,7 +5,7 @@
       <div class="col-sm-8 blog-main">
         {{#each model as |post|}}
           <div class="blog-post">
-            <h4>{{post.title}}</h4>
+            <div class="post-title">{{post.title}}</div>
             <p class="blog-post-meta">{{post.date}}</p>
             <img src="{{post.image}}" style="width: 80%" alt="{{post.title}}"/>
             <br>
