@@ -15,7 +15,6 @@ export default Ember.Component.extend({
         image: this.get('image'),
         content: this.get('content')
       };
-      console.log(params);
       this.sendAction('update', post, params);
     }
   }

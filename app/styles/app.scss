@@ -1,4 +1,5 @@
 @import "bootstrap";
+@import 'post';
 @import 'contact';
 
 /*
@@ -160,6 +161,8 @@ h6, .h6 {
 .blog-post-title {
   margin-bottom: .25rem;
   font-size: 2.5rem;
+  font-family: 'Josefin Sans', sans-serif;
+  text-transform: uppercase;
 }
 .blog-post-meta {
   margin-bottom: 1.25rem;

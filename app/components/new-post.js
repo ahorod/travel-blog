@@ -11,6 +11,12 @@ export default Ember.Component.extend({
         content: this.get('content')? this.get('content') : ""
       };
       this.sendAction('savePost', params);
+      // clear the form
+      this.set('title', '');
+      this.set('date', '');
+      this.set('category', '');
+      this.set('image', '');
+      this.set('content', '');
     }
   }
 });
