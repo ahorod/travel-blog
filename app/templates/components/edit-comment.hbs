@@ -17,7 +17,7 @@
           <div class="form-group row">
             <label for="name" class="col-2 col-form-label">Name:</label>
             <div class="col-10">
-              {{input class="form-control" type="text" value=title placeholder=comment.name}}
+              {{input class="form-control" type="text" value=name placeholder=comment.name}}
             </div>
           </div>
           <div class="form-group row">
@@ -36,7 +36,7 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button {{action 'update' comment}} class="btn btn-primary" data-dismiss="modal">Update</button>
+          <button {{action 'updateComment' comment}} class="btn btn-primary" data-dismiss="modal">Update</button>
         </div>
       </form>
     </div>

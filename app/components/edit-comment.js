@@ -7,13 +7,13 @@ export default Ember.Component.extend({
         this.sendAction('destroyComment', comment);
       }
     },
-    update(comment) {
+    updateComment(comment) {
       var params = {
         name: this.get('name'),
         date: this.get('date'),
         content: this.get('content')
       };
-      this.sendAction('update', comment, params);
+      this.sendAction('updateComment', comment, params);
     }
   }
 });
